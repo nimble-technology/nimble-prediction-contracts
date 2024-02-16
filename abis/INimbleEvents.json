@@ -1,0 +1,108 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "chainId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "sequenceNumber",
+        "type": "uint64"
+      }
+    ],
+    "name": "BatchPredictionFeedUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldFee",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newFee",
+        "type": "uint64"
+      }
+    ],
+    "name": "NimbleGetActionFeeUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldFee",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newFee",
+        "type": "uint64"
+      }
+    ],
+    "name": "NimbleUpdateActionFeeUpdate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "entityAddress",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "entityType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "publishTime",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "string[]",
+        "name": "tags",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int64",
+        "name": "reputationScore",
+        "type": "int64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "modelID",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "modelName",
+        "type": "string"
+      }
+    ],
+    "name": "PredictionFeedUpdate",
+    "type": "event"
+  }
+]

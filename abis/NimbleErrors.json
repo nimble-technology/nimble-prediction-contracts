@@ -1,0 +1,52 @@
+[
+  {
+    "inputs": [],
+    "name": "InsufficientFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidArgument",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidGovernanceDataSource",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidGovernanceMessage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidGovernanceTarget",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUpdateData",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUpdateDataSource",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoFreshUpdate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OldGovernanceMessage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PredictionFeedNotFound",
+    "type": "error"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "@nimble-web3/nimble-evm-contracts",
+  "version": "1.0.0",
+  "description": "Read AI network predictions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimble-web3/nimble-evm-contracts.git"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "generate-abi": "node scripts/generateAbi.js",
+    "build-mock": "solcjs --bin src/contracts/MockNimble.sol -o build/",
+    "get-prediction": "npm run build-mock && ts-node ts/cli/get_predictions.ts",
+    "update-prediction": "npm run build-mock && ts-node ts/cli/update_predictions.ts",
+    "api-test": "npm run build-mock && ts-node test/api_test/test_api.ts"
+  },
+  "keywords": [
+    "nimble",
+    "solidity",
+    "ai network"
+  ],
+  "author": "Nimble Network",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nimble-web3/nimble-evm-contracts/issues"
+  },
+  "homepage": "https://github.com/nimble-web3/nimble-evm-contracts#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/yargs": "^17.0.10",
+    "ethers": "^5.7.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-rc.1",
+    "solc": "^0.8.15",
+    "ts-node": "^10.9.1",
+    "web3": "^1.5.3",
+    "yargs": "^17.4.1"
+  }
+}
