@@ -8,10 +8,10 @@ import "./NimbleGovernance.sol";
 contract MockNimble is AbstractNimble, NimbleGovernance {
     mapping(string => NimbleStructs.PredictionFeed) predictionFeeds;
     uint64 sequenceNumber;
-    uint16 chainId;
+    uint64 chainId;
 
     constructor(
-        uint16 chainId_,
+        uint64 chainId_,
         uint64 getActionfee_,
         uint64 updateActionfee_
     ) {

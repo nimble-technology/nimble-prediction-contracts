@@ -22,6 +22,14 @@ Install necessary building tools:
 # if error, maybe change /etc/hosts
 ./scripts/install_foundry.sh
 
+# if lib/forge-std is empty or missing, run the following commands
+rm -rf lib/forge-std
+git submodule update --init --recursive
+
+# if the above doesn't work, create an empty tmp repo, run the following command,
+# and copy the lib/forge-std in the tmp repo to core-contracts/lib/forge-std
+forge install foundry-rs/forge-std
+
 # install jq
 brew install jq
 
