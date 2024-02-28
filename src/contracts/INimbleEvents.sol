@@ -18,7 +18,7 @@ interface INimbleEvents {
         string modelName
     );
 
-    event BatchPredictionFeedUpdate(uint16 chainId, uint64 sequenceNumber);
+    event BatchPredictionFeedUpdate(uint64 chainId, uint64 sequenceNumber);
 
     event NimbleGetActionFeeUpdate(uint64 oldFee, uint64 newFee);
 
